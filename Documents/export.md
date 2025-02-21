@@ -1,10 +1,10 @@
 # エクスポートを行う事業者さま向け組み込み手順
-```
-汎用モジュールはインポート・エクスポート双方を1つの実行ファイルで行いますが、この手順書ではPHPを利用したインポート処理について重点的に解説します。
-```
+
+> [!NOTE]
+>汎用モジュールはインポート・エクスポート双方を1つの実行ファイルで行いますが、この手順書ではPHPを利用したインポート処理について重点的に解説します。
+
 ## 想定する言語・環境
-<img src="https://img.shields.io/badge/PHP-8.0以上-000.svg?style=for-the-badge">
-<img src="https://img.shields.io/badge/CentOS-8.0以上-000.svg?style=for-the-badge">
+<img src="https://img.shields.io/badge/PHP-8.0以上-000.svg?style=for-the-badge">　<img src="https://img.shields.io/badge/CentOS-8.0以上-000.svg?style=for-the-badge">
 
 ## #1 FFIの有効化
 INI設定でFFIを有効化することで利用が可能になります。<br><br>
@@ -46,8 +46,8 @@ Rootディレクトリ直下にsphr（大文字・小文字利用可能）ディ
 |  4 | UserIdDigits| ユーザーID最大桁数 | int|    | 〇 | サービサーで管理されている利用者を一意に識別するIDの最大桁数（0詰めするため）|
 
 
-```
 作成例：
+``` JSON
 {
 	"ServiceId":"com.system.service-a",
 	"ServiceName":"サービスA",
@@ -107,7 +107,7 @@ return 0;
 ### CPU実行エラー
 
 .soファイルの実行が出来なかった場合、（CPU命令セットがサポートされていない旨のエラーが発生する場合）ご利用の環境下で汎用モジュールのビルドが必要です<br>
-<a href="./php-build.md">SPHR汎用モジュールのビルド手順</a>を参照して下さい
+<a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/php-build.md">SPHR汎用モジュールのビルド手順</a>を参照して下さい
 
 
 ### インターフェース
@@ -187,5 +187,5 @@ I/Fの戻り値としてはboolean(true/false)を返します。<br>
 |extract|データ抽出|
 
 #### エラーコード一覧
-<a href="./errorcode.md">エラーコード一覧</a>を参照して下さい
+<a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/errorcode.md">エラーコード一覧</a>を参照して下さい
 
