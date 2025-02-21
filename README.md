@@ -1,5 +1,8 @@
 # SPHR汎用モジュール
-生涯にわたるPHRの管理のため、国民一人一人がPHRサービスを選択し、他のサービスへデータの移動・活用できる「データポータビリティ」を確保することを目的とした、<br>
+生涯にわたるPHRの管理のため、「PHRサービスの選択・スイッチングを利用者が自由に行えること」は重要です。そのためには、自身のPHR情報を他のサービスへデータの移動・活用できる「データポータビリティ」の向上が不可欠です。<br>
+
+「データポータビリティの向上」を目的とし、
+
 - 令和６年度ヘルスケア産業基盤高度化推進事業
 - 医療機関におけるＰＨＲ利活用推進等に向けた実証調査事業
   
@@ -15,8 +18,7 @@
 汎用モジュールの自社サービスへの組み込み手順を、**事業者エンジニア**に向け解説します。<br>
 
 ### 使用技術一覧
-<img src="https://img.shields.io/badge/Csharp-000.svg?style=for-the-badge">
-<img src="https://img.shields.io/badge/nativeaot-000.svg?style=for-the-badge">
+<img src="https://img.shields.io/badge/Csharp-000.svg?style=for-the-badge">　<img src="https://img.shields.io/badge/nativeaot-000.svg?style=for-the-badge">
 
 
 ## 汎用モジュールで連携が可能な情報と形式
