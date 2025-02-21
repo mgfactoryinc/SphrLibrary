@@ -1,6 +1,3 @@
----
-title: SPHR汎用モジュールのビルド手順 2025 01 07
----
 # SPHR汎用モジュールのビルド手順
 
 ## 要件
@@ -14,8 +11,8 @@ Dockerがインストールされ、動作している必要があります。
 以下の行を削除してください。
 ```diff
 14,15d13
-<     <!-- 追加のCPU限定命令を有効に出来るオプション -->
-<     <IlcInstructionSet>native</IlcInstructionSet>
+<!-- 追加のCPU限定命令を有効に出来るオプション -->
+<IlcInstructionSet>native</IlcInstructionSet>
 ```
 
 ## 必要なファイルの作成
