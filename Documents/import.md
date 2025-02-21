@@ -9,7 +9,7 @@
 
 <a href="https://github.com/mgfactoryinc/SphrLibrary/tree/master/References/Java/SphrJavaSample">SphrJavaSample</a><br>
 1. 上記プロジェクトファイルをIDEにてビルド
-   - GradleやMaven等のパッケージ管理ツールにて、以下ライブラリをインストールして下さい
+   - GradleやMaven等のパッケージ管理ツールにて、以下ライブラリのインストールが必要な場合があります。
 		- jna-5.13.0.jar
 		- jna-platform-5.13.0.jar
 		- jackson-core-2.18.2.jar
