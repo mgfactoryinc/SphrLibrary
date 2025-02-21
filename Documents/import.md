@@ -1,14 +1,13 @@
 # インポートを行う事業者さま向け組み込み手順
-```
-汎用モジュールはインポート・エクスポート双方を1つの実行ファイルで行いますが、この手順書ではJavaを利用したインポート処理について重点的に解説します。
-```
+> [!NOTE]
+> 汎用モジュールはインポート・エクスポート双方を1つの実行ファイルで行いますが、この手順書ではJavaを利用したインポート処理について重点的に解説します。
+
 ## 想定する言語・環境
-<img src="https://img.shields.io/badge/Java SE-8.0以上-000.svg?style=for-the-badge">
-<img src="https://img.shields.io/badge/Windows-10以上-000.svg?style=for-the-badge">
+<img src="https://img.shields.io/badge/Java SE-8.0以上-000.svg?style=for-the-badge">　<img src="https://img.shields.io/badge/Windows-10以上-000.svg?style=for-the-badge">
 
 ## #1 ビルド・動作検証
 
-<a href="">DLLの組み込みテストサンプルへのリンク</a><br>
+<a href="https://github.com/mgfactoryinc/SphrLibrary/tree/master/References/Java/SphrJavaSample">SphrJavaSample</a><br>
 1. 上記プロジェクトファイルをIDEにてビルド
    - GradleやMaven等のパッケージ管理ツールにて、以下ライブラリをインストールして下さい
 		- jna-5.13.0.jar
@@ -175,6 +174,6 @@ I/Fの戻り値としてはboolean(true/false)を返します。<br>
 |extract|データ抽出|
 
 #### エラーコード一覧
-<a href="./errorcode.md">エラーコード一覧</a>を参照して下さい
+<a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/errorcode.md">エラーコード一覧</a>を参照して下さい
 
 
