@@ -38,9 +38,7 @@ Rootディレクトリ直下にsphr（大文字・小文字利用可能）ディ
 
 
 ## #3 実行
-<a href="">Java向け呼び出しサンプルコード</a>を参考に以下の方法で汎用モジュールに値を渡します。<br>
-> [!NOTE]
-> <a href="">サンプルclassファイルへリンク</a>は、Java SE-20.0にてコンパイルされています。ご利用のバージョンによっては再コンパイルの必要があります。
+<a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/References/Java/SphrJavaSample/src/SampleNAOT.java">Java向け呼び出しサンプルコード</a>を参考に以下の方法で汎用モジュールに値を渡します。<br>
 
 
 1. 汎用モジュールへSPHRファイルを受け渡し
