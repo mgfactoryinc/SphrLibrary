@@ -1,34 +1,9 @@
-# エラーコード
 
-エラーコードとエラー内容はログに出力されます。<br>
-I/Fの戻り値としてはboolean(true/false)を返します。<br>
-処理結果がfalseの場合の原因調査に使用できます。
-
-エラーコードの形式は以下のように構成されます。
-```
-[Level].sphr.[Method].[ErrorCode]
-```
-
-## Level
-エラーの情報レベルを判別します。
-level|名称|説明
--|-|-
-i|Information|正常終了
-w|Warning|警告(処理続行OK)
-e|Error|各種エラー
-
-## Method
-どの処理でエラーが発生したかを判別します。
-method|名称|説明
--|-|-
-export|エクスポート|-
-import|インポート|-
-extract|データ抽出|-
 
 ## エラーコード一覧
 
 コード|説明|.NET 対応 Exception
--|-|-
+ ------------- | ------------- | ------------- 
 i.sphr.[Method].200|正常終了|-
 e.sphr.[Method].1|保護されたメモリの読み取りまたは書き込みが試行されたときにスローされる例外。|System.AccessViolationException
 e.sphr.[Method].2|アンロードされたアプリケーション ドメインにアクセスしようとするとスローされる例外。|System.AppDomainUnloadedException
