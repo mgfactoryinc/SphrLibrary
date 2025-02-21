@@ -29,9 +29,9 @@
 
 
 ### インポートを行う事業者さま向けドキュメント
-<a href="./inport.md">インポートを行う場合の組み込み手順</a>
+<a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/import.md">インポートを行う場合の組み込み手順</a>
 
 ### エクスポートを行う事業者さま向けドキュメント
-<a href="./export.md">エクスポートを行う場合の組み込み手順</a>
+<a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/export.md">エクスポートを行う場合の組み込み手順</a>
 
 
