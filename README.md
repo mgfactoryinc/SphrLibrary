@@ -28,10 +28,10 @@
 | 歩数  | IEEE1752  |  ieee-physical-activity-1.0  | 
 
 
-### インポートを行う事業者さま向けドキュメント
+### インポートを行う事業者さま
 <a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/import.md">インポートを行う場合の組み込み手順</a>
 
-### エクスポートを行う事業者さま向けドキュメント
+### エクスポートを行う事業者さま
 <a href="https://github.com/mgfactoryinc/SphrLibrary/blob/master/Documents/export.md">エクスポートを行う場合の組み込み手順</a>
 
 
