@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SphrLibrary", "SphrLibrary\SphrLibrary.csproj", "{6046F688-B684-4896-8661-B348D7C5C92C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SphrTest", "References\CSharp\SphrTest\SphrTest.csproj", "{A6490527-8AAE-EDE9-DC33-737811BFD1FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6046F688-B684-4896-8661-B348D7C5C92C} = {6046F688-B684-4896-8661-B348D7C5C92C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6046F688-B684-4896-8661-B348D7C5C92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6046F688-B684-4896-8661-B348D7C5C92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6046F688-B684-4896-8661-B348D7C5C92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6046F688-B684-4896-8661-B348D7C5C92C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6490527-8AAE-EDE9-DC33-737811BFD1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6490527-8AAE-EDE9-DC33-737811BFD1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6490527-8AAE-EDE9-DC33-737811BFD1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6490527-8AAE-EDE9-DC33-737811BFD1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24EAC5AF-AD30-43CE-9524-384CA9C95DF6}
+	EndGlobalSection
+EndGlobal

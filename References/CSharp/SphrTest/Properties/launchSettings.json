@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SphrTest": {
+      "commandName": "Project",
+      "commandLineArgs": "Import,Extract C:\\SPHR 200002956"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Eclipse profile settings
+.settings
+
+# Ignore Gradle build output directory
+build
+
+# Ignore binaries
+lib/bin/*
+
+.vscode

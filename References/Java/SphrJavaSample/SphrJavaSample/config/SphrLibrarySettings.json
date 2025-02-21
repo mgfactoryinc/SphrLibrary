@@ -1,0 +1,6 @@
+{
+	"ServiceId": "com.system.service-a",
+	"ServiceName": "サービスA",
+	"StorageRootPath": "C:\\sphr",
+	"UserIdDigits": "12"
+}

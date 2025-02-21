@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- 必須 -->
+    <PublishAot>true</PublishAot>
+    <!-- NativeAOT対応と宣言する -->
+    <IsAotCompatible>true</IsAotCompatible>
+    <!-- 判定だけ有効にするなら -->
+    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+    <!-- 速度とサイズどちらを優先にするか（Size/Speed） -->
+    <OptimizationPreference>Speed</OptimizationPreference>
+    <!-- 追加のCPU限定命令を有効に出来るオプション -->
+    <!--<IlcInstructionSet>native</IlcInstructionSet>
+    <IlcMaxVectorTBitWidth>512</IlcMaxVectorTBitWidth>-->
+    <!-- 次のTrim設定は自動で有効になるので指定不要 -->
+    <!-- <PublishTrimmed>true</PublishTrimmed> -->
+    <!-- <EnableTrimAnalyzer>true</EnableTrimAnalyzer> -->
+    <!-- 同時に有効になるTrimmingの設定（full/partial） -->
+    <TrimMode>partial</TrimMode>
+    <!-- .NET8.0以降はこの設定は指定不可 -->
+    <!-- <TrimMode>copyused</TrimMode> -->
+    <!-- サイズを小さくする追加設定（以下2つは常に有効でもOK） -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <StripSymbols>true</StripSymbols>
+    <!-- Trimming警告有効 -->
+    <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
+    <!-- 監視・テレメトリ系ライブラリを使うときはtrue -->
+    <EventSourceSupport>false</EventSourceSupport>
+    <!-- フレームワークによっては必須設定 -->
+    <!-- 例：Avalonia UI は BuiltInComInteropSupportをtrueにする必要あり -->
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <!-- 例：ASP.NET Core -->
+    <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="JsonSchema.Net" Version="7.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="4.0.1" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IO\" />
+    <Folder Include="Schemas\" />
+    <Folder Include="Attributes\" />
+    <Folder Include="Entities\FHIR\" />
+    <Folder Include="Entities\SPHR\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Workers\" />
+    <Folder Include="Workers\Args\" />
+    <Folder Include="Workers\Base\" />
+    <Folder Include="Workers\Results\" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- TrimMode=partialの時の指定 -->
+    <!--<TrimmableAssembly Include="【使ってるDLL(アセンブリ)】" />-->
+    <TrimmableAssembly Include="JsonSchema.Net" Version="7.3.0" />
+    <TrimmableAssembly Include="Newtonsoft.Json" Version="13.0.3" />
+    <TrimmableAssembly Include="Newtonsoft.Json.Schema" Version="4.0.1" />
+    <TrimmableAssembly Include="System.Text.Json" Version="9.0.0" />
+
+    <!-- ルートアセンブリの指定 -->
+    <TrimmerRootAssembly Include="SphrLibrary" />
+
+    <!-- xmlで書いて指定することもできる -->
+    <!--<TrimmerRootDescriptor Include="./path/to/trd.xml" />-->
+  </ItemGroup>
+</Project>
